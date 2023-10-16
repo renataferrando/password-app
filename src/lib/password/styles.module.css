@@ -1,0 +1,49 @@
+.passwordWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.passwordWrapper > h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+.password {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.password > input {
+    border: solid 1px #000;
+    border-radius: 4px;
+}
+
+.validation {
+    display: flex;
+    flex-direction: column;
+}
+
+.validation span {
+    margin: 8px;
+}
+.checkmarkWrapper {
+    display: flex;
+}
+.checkmarkFalse, .checkmarkTrue {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.checkmarkFalse {
+    background-color: red;
+}
+.checkmarkTrue {
+    background-color: green;
+}

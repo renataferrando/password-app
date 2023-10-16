@@ -15,15 +15,17 @@ type DescriptionType = {
   [key: string]: string;
 };
 
+const propsDescription: DescriptionType = {
+  number: "Has a number 0-9",
+  character: "Has a special char !@#$%^&*",
+  uppercase: "Has uppercase Letter",
+  noConsecutiveLetter: "Has consecutive letters"
+};
+
+
 const Password = (props: propTypes) => {
   const { number, character, uppercase, noConsecutiveLetter, ...r } = props;
 
-  const propsDescription: DescriptionType = {
-    number: "Has a number 0-9",
-    character: "Has a special char !@#$%^&*",
-    uppercase: "Has uppercase Letter",
-    noConsecutiveLetter: "Has consecutive letters"
-  };
   const [checkPassword, setCheckPassword] = useState({
     number: false,
     character: false,
